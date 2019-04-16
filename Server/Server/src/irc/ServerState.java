@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import encoding.Encoder;
-
+	/** The ServerState object holds the information regarding all active users and channels.
+	 * 
+	 * 
+	 */
 public class ServerState {
 	private Hashtable<Integer, Client> clients;
 	private Hashtable<String, Client> clientsByNick;

@@ -20,17 +20,18 @@ public class Channel {
 		name=channel;
 		clients=new SimpleLink<Client>(client);
 	}
-	/**
-	 * 
-	 * @return the number of Clients in the channel.
-	 */
+
+/**
+ * 
+ * @return the number of Clients in the channel.
+ */
 	public int size(){
 		if (clients==null) return 0;
 		return clients.size();
 	}
 
 
-/**equals method that compare channel names.
+/** Equals method comparing channel names.
  *  return true if the channels have the same name.
  */
 
@@ -78,9 +79,9 @@ public class Channel {
 		return clients;
 	}
 
-	/** 
+	/**  return names of all clients in channel.
 	 * 
-	 * @return a String that start by 353 and channel name, following by the names of the clients in the channel.
+	 * @return a String starting with "353", the channel name, following by the names of the clients in the channel.
 	 */
 	public String clientNames() {
 		StringBuilder clientsBuilder = new StringBuilder();

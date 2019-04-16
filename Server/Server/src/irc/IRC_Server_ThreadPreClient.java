@@ -12,6 +12,11 @@ import threadperclient.ConnectionHandler_TPC;
 import threadperclient.TPC_Serializer;
 import threadperclient.ThreadPerClient;
 
+	/**
+	 * Main program, used for demonstration purposes. Create and run a
+	 * TPC-based server for the Echo protocol. Listening port number and
+	 * number of threads in the thread pool are read from the command line.
+	 */
 class IRC_Server_ThreadPreClient {
 	
 
